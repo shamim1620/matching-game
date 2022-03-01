@@ -45,14 +45,25 @@
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: #2196F3;
   padding: 10px;
   width: 70%;
+  background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
 }
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
   padding: 20px;
+  margin: 10px;
   font-size: 30px;
   text-align: center;
+  box-shadow: 5px 2px 20px 0 rgb(46 61 73 / 50%);
+}
+.icon-section{
+  margin-right: 20px;
+}
+.reload-btn{
+  padding:0px 20px;
+  border-radius: 10px;
+  border: 0px;
+  background-color: white;
 }
