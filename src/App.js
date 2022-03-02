@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRecycle, faStar, } from '@fortawesome/free-solid-svg-icons'
 import { useEffect, useState } from 'react';
 import './App.css';
+import CardItem from './component/CardItem';
 
 
 
@@ -67,13 +68,14 @@ function App() {
       <div className='game-container'>
         <div className="grid-container">
           {
-            data.map(item => <div onClick={() => setMove(move + 1)} className="grid-item">{item.id}</div>)
+            data.map(item => <div onClick={() => setMove(move + 1)} className="grid-item">
+              <CardItem
+                item={item}
+              ></CardItem>
+            </div>)
           }
-
-
         </div>
       </div>
-
     </div>
   );
 }

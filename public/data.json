@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "image": "A.png"
+        "image": "./image/A.png"
     },
     {
         "id": 1,
@@ -17,11 +17,11 @@
     },
     {
         "id": 3,
-        "image": "./image/K.jpg"
+        "image": "./image/10.png"
     },
     {
         "id": 3,
-        "image": "./image/K.jpg"
+        "image": "./image/10.png"
     },
     {
         "id": 4,
@@ -30,21 +30,21 @@
     {
         "id": 4,
         "image": "./image/Q.jpg"
+    },
+    {
+        "id": 4,
+        "image": "./image/J.png"
+    },
+    {
+        "id": 4,
+        "image": "./image/J.png"
     },
     {
         "id": 3,
-        "image": "./image/K.jpg"
+        "image": "./image/8.png"
     },
     {
         "id": 4,
-        "image": "./image/Q.jpg"
-    },
-    {
-        "id": 4,
-        "image": "./image/Q.jpg"
-    },
-    {
-        "id": 4,
-        "image": "./image/Q.jpg"
+        "image": "./image/8.png"
     }
 ]
