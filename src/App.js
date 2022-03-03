@@ -1,12 +1,8 @@
-
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRecycle, faStar, } from '@fortawesome/free-solid-svg-icons'
 import { useEffect, useState } from 'react';
 import './App.css';
-import CardItem from './component/CardItem';
-
-
 
 
 
@@ -42,9 +38,11 @@ function App() {
 
   }, [count])
 
-  const handleOnClick = () => {
-    console.log("clicked")
+  const handleOnClick = (id) => {
+    console.log(id)
   }
+
+
   return (
     <div className="App">
       <h3>Matching Game</h3>
@@ -69,9 +67,10 @@ function App() {
         <div className="grid-container">
           {
             data.map(item => <div onClick={() => setMove(move + 1)} className="grid-item">
-              <CardItem
-                item={item}
-              ></CardItem>
+              <div class="flip-card">
+                <img onClick={() => handleOnClick(item.id)} className="card-img" width="100%" height="170px" src={item.image} alt="Card" />
+
+              </div>
             </div>)
           }
         </div>
